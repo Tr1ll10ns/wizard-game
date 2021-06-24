@@ -1,0 +1,26 @@
+﻿<Project Sdk="Godot.NET.Sdk/3.2.4">
+  <PropertyGroup>
+    <ProjectGuid>{325401EB-CECD-4704-9C7C-C1C133CA76D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InitialWizardGamePrototype</RootNamespace>
+    <AssemblyName>Initial Wizard Game Prototype</AssemblyName>
+    <GodotProjectGeneratorVersion>1.0.0.0</GodotProjectGeneratorVersion>
+    <TargetFramework>net472</TargetFramework>
+    <!--The following properties were overridden during migration to prevent errors.
+    Enabling them may require other manual changes to the project and its files.-->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SpellEditor.cs" />
+    <Compile Include="src\main\Creature.cs" />
+    <Compile Include="src\main\Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\main\spells\BaseSpellNode.cs" />
+    <Compile Include="src\main\spells\Spell.cs" />
+  </ItemGroup>
+</Project>

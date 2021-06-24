@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 0.8
+
+[node name="World" type="StaticBody2D"]
+physics_material_override = SubResource( 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PoolVector2Array( 0, 576, 384, 576, 384, 448, 640, 448, 640, 320, 768, 320, 768, 576, 2176, 576, 2176, 0, 3584, 0, 3584, 1536, -2368, 1536, -2368, 0, -960, 0, -960, 640, 0, 640 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 384, 448, 640, 448, 640, 320, 768, 320, 768, 576, 2176, 576, 2176, 0, 3584, 0, 3584, 1536, -2368, 1536, -2368, 0, -960, 0, -960, 640, 0, 640, 0, 576, 384, 576 )
